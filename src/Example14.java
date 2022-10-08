@@ -17,30 +17,23 @@ public class Example14 {
         Scanner inputValue3;
         inputValue3 = new Scanner(System.in);
         value3 = inputValue3.nextInt();
-
-        if ( value >= value2 ) {
+       if (value >= value2) {
             if (value2 >= value3)
                 System.out.println("" + value3 + "," + value2 + "," + value);
-            else if (value3 >= value )
+            else if (value3 >= value)
                 System.out.println("" + value2 + "," + value + "," + value3);
             else if (value > value3)
                 System.out.println("" + value2 + "," + value3 + "," + value);
 
-        }
-
-        if  (value2 > value)
-        {
-            if (value3 >= value2)
+        } else {
+            if (value3 >= value2) {
                 System.out.println("" + value + "," + value2 + "," + value3);
-            else if (value3 >= value)
-                System.out.println("" + value2 + "," + value + "," + value3);
-            else  if (value > value3)
-                System.out.println("" + value2 + "," + value3 + "," + value);
+            }else if (value3 >= value)
+                    System.out.println("" + value + "," + value3 + "," + value2);
+                else if (value > value3)
+                    System.out.println("" + value3 + "," + value + "," + value2);
 
-
-                    }
-                }
             }
-
-
+        }
+    }
 
